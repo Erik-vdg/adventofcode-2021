@@ -1,19 +1,19 @@
 Avent of Code 2021 - Python
 ===========================
 
-|Python Version| |License| |Tests| |Codecov| |pre-commit| |Black|
+|License| |Tests| |Codecov| |pre-commit| |Black| |MyMachine|
 
-.. |Python Version| image:: https://img.shields.io/pypi/pyversions/aoc2021-python
-   :target: https://pypi.org/project/aoc2021-python
-   :alt: Python Version
-.. |License| image:: https://img.shields.io/pypi/l/aoc2021-python
+.. |MyMachine| image:: https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg
+   :target: https://github.com/nikku/works-on-my-machine
+   :alt: Works on my Machine!
+.. |License| image:: https://img.shields.io/badge/License-MIT-yellow.svg
    :target: https://opensource.org/licenses/MIT
-   :alt: License
-.. |Tests| image:: https://github.com/Erik-vdg/aoc2021-python/workflows/Tests/badge.svg
-   :target: https://github.com/Erik-vdg/aoc2021-python/actions?workflow=Tests
+   :alt: License: MIT
+.. |Tests| image:: https://github.com/Erik-vdg/adventofcode-2021-python/workflows/Tests/badge.svg
+   :target: https://github.com/Erik-vdg/adventofcode-2021-python/actions?workflow=Tests
    :alt: Tests
-.. |Codecov| image:: https://codecov.io/gh/Erik-vdg/aoc2021-python/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/Erik-vdg/aoc2021-python
+.. |Codecov| image:: https://codecov.io/gh/Erik-vdg/adventofcode-2021-python/branch/main/graph/badge.svg
+   :target: https://app.codecov.io/gh/Erik-vdg/adventofcode-2021-python
    :alt: Codecov
 .. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
    :target: https://github.com/pre-commit/pre-commit
