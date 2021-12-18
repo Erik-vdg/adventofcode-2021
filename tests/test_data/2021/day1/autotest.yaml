@@ -1,0 +1,7 @@
+tests:
+  - name: part_a
+    input: input.txt
+    expected: 7
+  - name: part_b
+    input: input.txt
+    expected: 5

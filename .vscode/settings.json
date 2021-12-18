@@ -97,7 +97,11 @@
     "**/.pyre/": true,
     "**/.pytype/": true,
     "**/cython_debug/": true,
-    "bazel-*": true
+    "bazel-*": true,
+    ".mypy_cache/**/*": true,
+    "**/__pycache__/": true,
+    "**/.mypy_cache/": true,
+    "**/.vscode/": true
   },
   "python.pythonPath": "/home/erik/.pyenv/versions/3.9.9/envs/aoc2021/bin/python"
 }

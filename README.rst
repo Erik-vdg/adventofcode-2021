@@ -23,16 +23,12 @@ Avent of Code 2021 - Python
    :alt: Black
 
 
-Features
---------
-
-* TODO
-
-
 Requirements
 ------------
 
-* TODO
+* This requires configuration of the `aocd`_ utility upon initial setup::
+   export AOC_SESSION=cafef00db01dfaceba5eba11deadbeef
+
 
 
 Usage
@@ -78,3 +74,4 @@ This project was generated from `@cjolowicz`_'s `Hypermodern Python Cookiecutter
 .. github-only
 .. _Contributor Guide: CONTRIBUTING.rst
 .. _Usage: https://aoc2021-python.readthedocs.io/en/latest/usage.html
+.. _aocd: https://github.com/wimglenn/advent-of-code-data

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "aoc2021-python"
+name = "aoc-python"
 version = "0.0.0"
 description = "Avent of Code 2021 - Python"
 authors = ["Erik van der Goetz <erik.vandergoetz@gmail.com>"]
@@ -20,6 +20,7 @@ Changelog = "https://github.com/Erik-vdg/aoc2021-python/releases"
 [tool.poetry.dependencies]
 python = "^3.7.12"
 click = "^8.0.3"
+advent-of-code-data = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.1.2"
@@ -44,16 +45,20 @@ pre-commit-hooks = "^4.0.1"
 sphinx-rtd-theme = "^1.0.0"
 sphinx-click = "^3.0.2"
 Pygments = "^2.7.2"
+types-PyYAML = "^6.0.1"
 
 [tool.poetry.scripts]
-aoc2021-python = "aoc2021_python.__main__:main"
+aoc-python = "aoc_python.__main__:main"
+
+[tool.poetry.plugins."adventofcode.user"]
+Erik-vdg = "aoc_python.util:mysolve"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
 
 [tool.coverage.run]
 branch = true
-source = ["aoc2021_python"]
+source = ["aoc_python"]
 
 [tool.coverage.report]
 show_missing = true
