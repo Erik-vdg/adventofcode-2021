@@ -66,11 +66,11 @@ def discover_auto_test_data() -> List[AutoTest]:
     for year_path in TEST_DATA_DIR.iterdir():
         for day_path in year_path.iterdir():
             if day_path.joinpath(AUTOTEST_FILENAME).exists():
-                discovered_tests.append(AutoTest.from_yaml(day_path))
+                discovered_tests.extend(AutoTest.from_yaml(day_path).tests)
     return discovered_tests
 
 
-used_testcases = discover_auto_test_data()[0].tests
+used_testcases = discover_auto_test_data()
 
 
 @pytest.mark.parametrize(
