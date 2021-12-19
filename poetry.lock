@@ -1128,7 +1128,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.12"
-content-hash = "a58b606a875b86a506698dd02a35bfe2f8a7eb208f9c4a234717d0351c301e11"
+content-hash = "1d365adde17bc05055271d867e1788a1caf143e8f21f760413ecd75c1137fc39"
 
 [metadata.files]
 advent-of-code-data = [
