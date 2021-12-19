@@ -49,7 +49,7 @@ types-PyYAML = "^6.0.1"
 PyYAML = "^6.0"
 
 [tool.poetry.scripts]
-aoc-python = "aoc_python.__main__:main"
+aoc-python = "aoc_python.__main__:main" ## TODO replace this with a helper util to create files
 
 [tool.poetry.plugins."adventofcode.user"]
 Erik-vdg = "aoc_python.util:mysolve"
