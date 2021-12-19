@@ -1,9 +1,11 @@
-"""
+"""**AOCD plugin utilities**.
+
 This module provides a sample entry-point for your aocd "plugin".
 advent-of-code-data runner will repeatedly call your entry point
 with varying year (2015+), day (1-25) and input data. The only
 requirement is: your entry-point should be a callable which must
 return a tuple of two values.
+
 Note: On Dec 25 there is only one puzzle, but you should return
 a tuple of 2 values anyway, e.g. (part_a_answer, None) the
 second value of the tuple will not be used regardless.
@@ -45,6 +47,7 @@ AocSolution = Callable[[List[str]], Union[str, int]]
 def mysolve(
     year: str, day: str, data: str
 ) -> Tuple[Union[str, int], Union[str, int]]:  # pragma: nocover
+    """Solve the Daily Problem."""
     data_list = data.splitlines()
     a = get_function(year, day, "part_a")(data_list)
     b = get_function(year, day, "part_b")(data_list)
@@ -52,7 +55,8 @@ def mysolve(
 
 
 def get_function(year: str, day: str, function_name: str) -> AocSolution:
-    mod_name = "aoc_python.{}.day{}".format(year, day)
+    """Helper function to retrieve the solution function for each day."""
+    mod_name = "aoc_python.year{}.day{}".format(year, day)
     mod = importlib.import_module(mod_name)
     found_func: AocSolution = getattr(mod, function_name)
     return found_func

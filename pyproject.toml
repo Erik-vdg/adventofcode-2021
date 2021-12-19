@@ -21,6 +21,7 @@ Changelog = "https://github.com/Erik-vdg/aoc2021-python/releases"
 python = "^3.7.12"
 click = "^8.0.3"
 advent-of-code-data = "^1.1.1"
+PyYAML = "^6.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.1.2"
@@ -28,7 +29,6 @@ coverage = {extras = ["toml"], version = "^6.2"}
 safety = "^1.9.0"
 mypy = "^0.920"
 typeguard = "^2.9.1"
-xdoctest = {extras = ["colors"], version = "^0.15.0"}
 sphinx = "^4.3.1"
 sphinx-autobuild = "^2021.3.14"
 pre-commit = "^2.8.2"
@@ -46,6 +46,7 @@ sphinx-rtd-theme = "^1.0.0"
 sphinx-click = "^3.0.2"
 Pygments = "^2.7.2"
 types-PyYAML = "^6.0.1"
+PyYAML = "^6.0"
 
 [tool.poetry.scripts]
 aoc-python = "aoc_python.__main__:main"
