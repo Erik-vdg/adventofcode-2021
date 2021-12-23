@@ -37,23 +37,6 @@ class BingoBoard:
                 == self.BOARD_SIZE
             ):
                 return True
-        # Check for diagonals
-        diagonal_1 = {
-            Coordinate(0, 0),
-            Coordinate(1, 1),
-            Coordinate(2, 2),
-            Coordinate(3, 3),
-            Coordinate(4, 4),
-        }
-        diagonal_2 = {
-            Coordinate(0, 4),
-            Coordinate(1, 3),
-            Coordinate(2, 2),
-            Coordinate(3, 1),
-            Coordinate(4, 0),
-        }
-        if diagonal_1.issubset(drawn_coords) or diagonal_2.issubset(drawn_coords):
-            return True
 
         # Otherwise we don't have any solutions
         return False
